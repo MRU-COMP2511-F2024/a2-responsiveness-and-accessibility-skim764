@@ -3,6 +3,8 @@
 
 https://docs.google.com/document/d/1FQ8_7J8ZwtUmNAGYCSjdGhZWqdfgW86C0wREJ9Q3grE/edit?usp=sharing
 
+https://docs.google.com/document/d/1pmo_NX_ZfmEtSR7PkO8wVo0BXL2NZ5HNvDyUfYcMSJY/edit?usp=sharing 
+
 # Part 1
 > Complete & submit this part **at least** one week before the assignment deadline.
 
