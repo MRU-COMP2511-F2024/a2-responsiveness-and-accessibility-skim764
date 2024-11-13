@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact us for inquiries about cat care.">
+    <meta name="keywords" content="contact, cat care, inquiries">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/contact-us.css">
+</head>
+<body>
+    <header>
+        <h1>Smokey's World</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="getting-a-cat.html">Getting a Cat</a></li>
+                <li><a href="caring-for-a-cat.html">Caring for a Cat</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contact Us</h2>
+        <form action="mailto:info@smokeysworld.com" method="post" enctype="text/plain">
+            <label>Salutation:</label>
+            <div>
+                <input type="radio" id="Male" name="salutation" value="Male." required>
+                <label for="Male">Male.</label>
+            </div>
+            <div>
+                <input type="radio" id="Female" name="salutation" value="Female." required>
+                <label for="Female">Female.</label>
+            </div>
+            <div>
+                <input type="radio" id="They" name="salutation" value="They." required>
+                <label for="They">They.</label>
+            </div>
+            <br>
+
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required autofocus><br>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required><br>
+
+            <label for="body">Message:</label>
+            <textarea id="body" name="body" rows="5" required></textarea><br>
+
+            <label>Areas of Interest:</label>
+            <div>
+                <input type="checkbox" id="newsletter" name="newsletter" value="Subscribe to newsletter">
+                <label for="newsletter">Subscribe to our newsletter</label><br>
+            </div>
+            <div>
+                <input type="checkbox" id="cat-tips" name="cat-tips" value="Receive cat care tips">
+                <label for="cat-tips">Receive cat care tips</label><br>
+            </div>
+
+            <!-- Submit and Reset buttons -->
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+    <footer>
+        <p>Contact us at info@smokeysworld.com</p>
+    </footer>
+</body>
+</html>

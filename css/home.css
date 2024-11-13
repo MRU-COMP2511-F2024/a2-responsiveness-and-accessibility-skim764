@@ -1,0 +1,123 @@
+/* home.css */
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fef8dd;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #f6dec4;
+    color: #300532;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #300532;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: #300532;
+}
+
+/* article */
+article {
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px;
+}
+/* Image sizing */
+img {
+    width: 150px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+/* Main image gallery styles */
+.image-container {
+    display: flex;         
+    justify-content: center;
+    flex-wrap: wrap;       
+}
+
+.image-gallery {
+    display: flex;          
+    flex-direction: column;  
+    align-items: center;      
+    margin: 10px;          
+}
+
+.image-gallery img {
+    max-width: 100%;        
+    height: auto;           
+}
+
+.image-gallery figcaption {
+    text-align: center;      
+    font-style: italic;      
+    margin-top: 5px;        
+}
+
+
+
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f6dec4;
+    color: #300532;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #155674; 
+    text-decoration: none; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
+.bold-underline {
+    font-weight: bold;
+    text-decoration: underline;
+}
