@@ -8,11 +8,17 @@
     <title>What You Need to Know Before Getting a Cat</title>
     <link rel="stylesheet" href="/css/getting-a-cat.css">
 </head>
+
 <body>
     <header>
-        <h1>Smokey's World</h1>
-        <nav>
-            <ul>
+        <div class="top-bar">
+            <button class="hamburger-menu" aria-label="Menu">☰</button>
+            <div class="logo">
+                <h1><img src="images/logo.png" alt="Smokey's World Logo" class="logo"></h1>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="getting-a-cat.html">Getting a Cat</a></li>
                 <li><a href="caring-for-a-cat.html">Caring for a Cat</a></li>
@@ -20,6 +26,7 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <h2>Things to Consider Before Getting a Cat</h2>
         <p>Adopting a cat is a big commitment. Here are some factors to consider:</p>
@@ -57,5 +64,19 @@
     <footer>
         <p><a href="contact-us.html" class="bold-underline">Contact us</a> at info@smokeysworld.com</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburgerButton = document.querySelector('.hamburger-menu');
+            const navMenu = document.querySelector('.nav-menu');
+
+            // Toggle the "show" class on the nav menu when the hamburger button is clicked
+            hamburgerButton.addEventListener('click', function () {
+                navMenu.classList.toggle('show');
+            });
+        });
+    </script>
+
+    
 </body>
 </html>

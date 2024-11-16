@@ -10,9 +10,14 @@
 </head>
 <body>
     <header>
-        <h1>Smokey's World</h1>
-        <nav>
-            <ul>
+        <div class="top-bar">
+            <button class="hamburger-menu" aria-label="Menu">☰</button>
+            <div class="logo">
+                <h1><img src="images/logo.png" alt="Smokey's World Logo" class="logo"></h1>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="getting-a-cat.html">Getting a Cat</a></li>
                 <li><a href="caring-for-a-cat.html">Caring for a Cat</a></li>
@@ -24,31 +29,47 @@
         <div class="container">
             <section class="content">
                 <h2>Essential Care Guide for Cats</h2>
-                <article class="caring-for-a-cat" id="growth">
-                    <h3>Basic Knowledge of Cat Growth</h3>
-                    <p>
-                        In the first year of life, kittens go through several stages of growth, each of which leads to physical and cognitive changes. If you know my cat's growth stage, you can help her grow more confidently. <br>
-                        Studies have shown that a cat's lifelong health starts with its solid foundation in childhood. As it grows from a newborn kitten to a mature cat, so do its nutritional needs. Figuring out what is needed for optimal health at each growth stage will help provide everything needed for the cat's growth. <br>
-                        Having a kitten is not tricky. However, if it's your first time raising a pet or considering one, you probably have many questions. You may have questions about how a kitten grows month by month, how it trains, or how fast it grows (Hint: It depends on the seedlings!), when it grows and becomes a mature cat.
-                    </p>
-                    <h3>How to take care of cats</h3>
-                    <p>
-                        Mother cats provide the nutrition, immunity, and social skills that kittens need to start healthy lives. This is why they depend on their caregivers for all they need to grow up when the kitten leaves their mother. <br>
-                        The kitten's immune system is not yet complete. When the mother cat stops breastfeeding and starts feeding solid food, the kitten's immunity may decrease, making it vulnerable to various diseases. Therefore, the kitten's first step toward a healthy future is to visit an animal hospital. <br>
-                        Generally, kitten healthcare includes regular health checkups, vaccinations, parasite prevention, and oral care, all essential to a kitten's health. Finding a good veterinarian near your home will be an excellent resource to get the information you need to take care of your kitten.
-                    </p>
-                </article>
+    
+                <div class="grid">
+                    <article class="caring-for-a-cat" id="growth">
+                        <h3>Basic Knowledge of Cat Growth</h3>
+                        <p>
+                            In the first year of life, kittens go through several stages of growth, each of which leads to physical and cognitive changes...
+                        </p>
+                    </article>
+                    <div class="image-container">
+                        <img src="images/10.jpeg" alt="Nuter" class="photo">
+                    </div>
+    
+                    <article class="caring-for-a-cat">
+                        <h3>How to take care of cats</h3>
+                        <p>
+                            Mother cats provide the nutrition, immunity, and social skills that kittens need to start healthy lives...
+                        </p>
+                    </article>
+                    <div class="image-container">
+                        <img src="images/11.jpeg" alt="Cat Drive" class="photo">
+                    </div>
+                </div>
             </section>
-            <div class="images">
-                <figure class="photos">
-                    <img src="images/10.jpeg" alt="Nuter" class="top-photo float-right">
-                    <img src="images/11.jpeg" alt="Cat Drive" class="bottom-photo float-right">          
-                </figure>
-            </div>
         </div>
     </main>
+    
     <footer>
         <p><a href="contact-us.html" class="bold-underline">Contact us</a> at info@smokeysworld.com</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburgerButton = document.querySelector('.hamburger-menu');
+            const navMenu = document.querySelector('.nav-menu');
+
+            // Toggle the "show" class on the nav menu when the hamburger button is clicked
+            hamburgerButton.addEventListener('click', function () {
+                navMenu.classList.toggle('show');
+            });
+        });
+    </script>
+
 </body>
 </html>

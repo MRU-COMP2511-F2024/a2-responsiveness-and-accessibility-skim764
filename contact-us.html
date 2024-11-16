@@ -10,9 +10,14 @@
 </head>
 <body>
     <header>
-        <h1>Smokey's World</h1>
-        <nav>
-            <ul>
+        <div class="top-bar">
+            <button class="hamburger-menu" aria-label="Menu">☰</button>
+            <div class="logo">
+                <h1><img src="images/logo.png" alt="Smokey's World Logo" class="logo"></h1>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <ul id="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="getting-a-cat.html">Getting a Cat</a></li>
                 <li><a href="caring-for-a-cat.html">Caring for a Cat</a></li>
@@ -20,6 +25,7 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <h2>Contact Us</h2>
         <form action="mailto:info@smokeysworld.com" method="post" enctype="text/plain">
@@ -66,13 +72,27 @@
                 <label for="cat-tips">Receive cat care tips</label><br>
             </div>
 
-            <!-- Submit and Reset buttons -->
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
+            <div class="button-container">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
         </form>
     </main>
     <footer>
         <p>Contact us at info@smokeysworld.com</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const hamburgerButton = document.querySelector('.hamburger-menu');
+            const navMenu = document.querySelector('.nav-menu');
+
+            // Toggle the "show" class on the nav menu when the hamburger button is clicked
+            hamburgerButton.addEventListener('click', function () {
+                navMenu.classList.toggle('show');
+            });
+        });
+    </script>
+
 </body>
 </html>
