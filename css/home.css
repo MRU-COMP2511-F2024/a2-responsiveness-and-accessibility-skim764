@@ -230,9 +230,19 @@ footer a:hover {
     font-size: 16px;
     color: #ffffff; 
     background-color: #007BFF; 
-    border: none; 
+    border-radius: 5; 
     padding: 10px 20px; 
+    margin: 10px;
     cursor: pointer; 
+    width: 100px;
+    text-align: center;
+}
+
+.button-container {
+    display: flex; 
+    justify-content: flex-end; 
+    gap: 10px; 
+    margin-top: 15px;
 }
 
 .submit-button:hover {
