@@ -203,7 +203,7 @@ footer a:hover {
 
     .nav-menu {
         display: none; 
-        background-color: #9bcdb4;
+        background-color: #f6dec4;
         position: absolute;
         top: 50px;
         left: 0;
@@ -242,6 +242,10 @@ footer a:hover {
 
 /* Responsive layout for medium devices */
 @media (min-width: 591px) and (max-width: 790px) {
+    .hamburger-menu {
+        display: none; 
+    }
+
     .logo-container img {
         max-width: 100px; 
     }
@@ -279,5 +283,10 @@ footer a:hover {
 
     .smokey-article {
         padding: 30px;
+    }
+
+    .hamburger-menu {
+        display: none; 
+    
     }
 }

@@ -244,6 +244,10 @@ footer {
 
 /* Responsive layout for medium devices */
 @media (min-width: 591px) and (max-width: 790px) {
+    .hamburger-menu {
+        display: none; 
+    }
+
     .logo-container img {
         max-width: 100px; 
     }
@@ -281,5 +285,10 @@ footer {
 
     .smokey-article {
         padding: 30px;
+    }
+
+    .hamburger-menu {
+        display: none; 
+    
     }
 }
