@@ -65,14 +65,20 @@ nav ul li a:hover {
 }
 
 .hamburger-menu {
-    display: none; 
-    background-color: #3b939b;
-    border: none;
-    font-size: 24px;
+    font-size: 24px; 
+    color: #ffffff; 
+    background-color: #333333; 
+    border: none; 
+    padding: 10px;
     cursor: pointer;
-    position: absolute;
-    top: 10px;
-    left: 10px;
+}
+
+.hamburger-menu:hover {
+    background-color: #555555; 
+}
+
+.hamburger-menu:focus {
+    outline: 2px solid #FFD700; 
 }
 
 /* Main content styles */

@@ -209,14 +209,37 @@ footer a:hover {
 }
 
 .hamburger-menu {
-    display: none; 
-    background: none;
-    border: none;
-    font-size: 24px;
+    font-size: 24px; 
+    color: #ffffff; 
+    background-color: #333333; 
+    border: none; 
+    padding: 10px;
     cursor: pointer;
-    position: absolute;
-    top: 10px;
-    left: 10px;
+}
+
+.hamburger-menu:hover {
+    background-color: #555555; 
+}
+
+.hamburger-menu:focus {
+    outline: 2px solid #FFD700; 
+}
+
+.submit-button {
+    font-size: 16px;
+    color: #ffffff; 
+    background-color: #007BFF; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+}
+
+.submit-button:hover {
+    background-color: #0056b3; 
+}
+
+.submit-button:focus {
+    outline: 2px solid #FFD700; 
 }
 
 /* Responsive layout for small devices */
@@ -292,6 +315,10 @@ footer a:hover {
     .image-container {
         grid-template-columns: repeat(2, 1fr); 
     }
+
+    .hamburger-menu {
+        display: none; 
+    }
 }
 
 /* Responsive layout for large devices */
@@ -318,5 +345,10 @@ footer a:hover {
 
     .smokey-article {
         padding: 30px;
+    }
+
+    .hamburger-menu {
+        display: none; 
+    
     }
 }

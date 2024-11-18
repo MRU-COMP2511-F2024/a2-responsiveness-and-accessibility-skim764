@@ -11,9 +11,13 @@
 <body>
     <header>
         <div class="top-bar">
-            <button class="hamburger-menu" aria-label="Menu">☰</button>
+            <button class="hamburger-menu" aria-label="Menu">
+                ☰
+            </button>
             <div class="logo">
-                <h1><img src="images/logo.png" alt="Smokey's World Logo" class="logo"></h1>
+                <h1>
+                    <img src="images/logo.png" alt="Smokey's World - contact-us" class="logo">
+                </h1>
             </div>
         </div>
         <nav class="nav-menu">
@@ -29,48 +33,38 @@
     <main>
         <h2>Contact Us</h2>
         <form action="mailto:info@smokeysworld.com" method="post" enctype="text/plain">
-            <label>Salutation:</label>
-            <div>
-                <input type="radio" id="Male" name="salutation" value="Male." required>
-                <label for="Male">Male.</label>
-            </div>
-            <div>
-                <input type="radio" id="Female" name="salutation" value="Female." required>
-                <label for="Female">Female.</label>
-            </div>
-            <div>
-                <input type="radio" id="They" name="salutation" value="They." required>
-                <label for="They">They.</label>
-            </div>
+            <label for="salutation">Salutation:</label>
+            <select name="salutation" id="salutation">
+                <option value="mr">Mr.</option>
+                <option value="ms">Ms.</option>
+                <option value="mrs">Mrs.</option>
+            </select>
+
             <br>
 
             <label for="first-name">First Name:</label>
-            <input type="text" id="first-name" name="first-name" required autofocus><br>
+<input type="text" id="first-name" name="first-name" required autofocus><br>
 
-            <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name" name="last-name" required><br>
+<label for="last-name">Last Name:</label>
+<input type="text" id="last-name" name="last-name" required><br>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="example@mail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="example@mail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
 
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required><br>
+<label for="subject">Subject:</label>
+<input type="text" id="subject" name="subject" required><br>
 
-            <label for="body">Message:</label>
-            <textarea id="body" name="body" rows="5" required></textarea><br>
+<label for="body">Message:</label>
+<textarea id="body" name="body" rows="5" required></textarea><br>
 
-            <label>Areas of Interest:</label>
-            <div>
-                <input type="checkbox" id="newsletter" name="newsletter" value="Subscribe to newsletter">
-                <label for="newsletter">Subscribe to our newsletter</label><br>
-            </div>
-            <div>
-                <input type="checkbox" id="cat-tips" name="cat-tips" value="Receive cat care tips">
-                <label for="cat-tips">Receive cat care tips</label><br>
-            </div>
+            <label for="areas-of-interest">Areas of Interest:</label>
+            <select id="areas-of-interest" name="areas-of-interest">
+                <option value="newsletter">Subscribe to our newsletter</option>
+                <option value="cat-tips">Receive cat care tips</option>
+            </select>
 
             <div class="button-container">
                 <input type="submit" value="Submit">
@@ -79,7 +73,11 @@
         </form>
     </main>
     <footer>
-        <p><a href="contact-us.html" class="bold-underline">Contact us</a> at <a href="mailto:info@smokeysworld.com">info@smokeysworld.com</a></p>
+        <p>
+            <a class="bold-underline" href="/contact-us">Contact us</a> at 
+            <a href="mailto:info@smokeysworld.com">info@smokeysworld.com</a>
+        </p>
+        
     </footer>
     
 
