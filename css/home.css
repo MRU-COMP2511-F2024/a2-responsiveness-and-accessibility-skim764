@@ -6,14 +6,14 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #fef8dd;
-    color: #333;
+    background-color: #f1caa0;
+    color: #300532;
 }
 
 /* Header styles */
 header {
-    background-color: #f6dec4;
-    color: #300532;
+    background-color: #794c1b;
+    color: white;
     padding: 5px 0; 
     text-align: center;
 }
@@ -59,7 +59,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #300532;
+    color: white;
     text-decoration: none;
 }
 

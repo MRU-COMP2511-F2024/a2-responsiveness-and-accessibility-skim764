@@ -6,12 +6,13 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
+    background-color: #f6dec4;
+    color: #a59494;
 }
 
 /* Header styles */
 header {
-    background-color: #cfe3d9; 
+    background-color: #102e1f; 
     color: #ebf0f3;
     padding: 15px 0;
     text-align: center;
@@ -62,7 +63,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #300532;
+    color: white;
     text-decoration: none;
 }
 
@@ -196,7 +197,7 @@ footer a:hover {
 
     .nav-menu {
         display: none; 
-        background-color: #cfe3d9;
+        background-color: #9bcdb4;
         position: absolute;
         top: 50px;
         left: 0;

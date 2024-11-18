@@ -6,9 +6,10 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #c9fbff;
-    color: #333;
+    background-color: #f6dec4;
+    color: #300532;
 }
+
 
 header {
     background-color: #155674;
@@ -55,7 +56,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #300532;
+    color: white;
     text-decoration: none;
 }
 
