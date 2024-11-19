@@ -58,4 +58,51 @@ Project Planning
 ![Figure-Ground Relationship](images/12.png)
 - Common Fate: Elements like footers that contain contact information are consistent across all pages. This consistency indicates that these elements work together to help users understand their purpose throughout the site. 
 
-A2
+##
+# A2
+
+1. Identify problems with manual and automatic analysis.
+
+   During the website's development, several categories of accessibility and usability issues were found through manual and automatic analysis. 
+
+   - Missing or inappropriate alternative text: Some images lack descriptive alternative text, or the text provided did not adequately convey the purpose of the image.
+
+   - Labelling issues: Certain form elements are not correctly associated with labels, which can confuse users who rely on auxiliary techniques.
+
+   - Colour contrast issues: Text and background colours did not always meet contrast ratio guidelines, making it difficult for visually impaired users to read the content
+
+   - Keyboard navigation and focus management: Interactive elements (e.g., buttons, links) cannot be fully explored or distinguished through the keyboard, affecting users who rely on input methods rather than mice.
+
+   - Responsive Design Challenges: Some elements' layouts and features are not optimized for smaller screen sizes or other directions, causing usability issues on mobile devices.
+   
+2. The type has been changed to resolve the issue.
+
+    To address these issues, we have implemented the following common types of changes:
+
+    - Enhanced Text Alternative: Add or improve alternative properties in the image to provide meaningful descriptions.
+
+    - Improved label access: Ensure all form elements are correctly associated with the label tags used in the properties.
+
+    - Increase colour contrast: Follow the WCAG instructions using an adapted colour scheme to ensure sufficient contrast between text and background.
+
+    - Keyboard and Focus Optimization: Added focus styles to interactive elements and obtained logical tap sequences for smooth keyboard navigation.
+
+    - Adjust responsive design: Flexible layout and media queries have been used to improve the display and usability of content across different screen sizes.
+
+   I tried to make various corrections to solve the problem, but some parts of them did not change the error. In addition, errors were found, but some could not be corrected due to too many variations on the homepage during the correction.
+
+3. Connection to the Gestalt Principles
+
+    The accessibility improvement is closely consistent with the Gestalt principle of visual perception, which emphasizes order creation, clarity, and harmonization of design. 
+
+    - Proximity and similarity: Grouping and consistently aligning relevant form elements improves the user's ability to recognize connections between inputs and labels.
+
+    - Figure-Ground: Color contrast enhancements make it easier for users to distinguish between text (picture) and background (background), improving readability and concentration.
+
+    - Closure and continuity: Keyboard focus and navigation changes helped reduce cognitive load by maintaining continuity while users interacted with the website.
+
+    - Common Fate: Improved focus status and hover effects to highlight key interactive elements and effectively guide users through the interface.
+
+    - Symmetry: Even if the screen size changes, the left and right arrangements are constant, so confusion or imbalance is not felt. The symmetrical design provides a balanced arrangement so that the user can visually search easily.
+
+   These changes create a more intuitive, inclusive design that improves accessibility and user experience.
